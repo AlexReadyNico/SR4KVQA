@@ -1,0 +1,125 @@
+{
+    "os": "Linux-5.8.0-59-generic-x86_64-with-glibc2.10",
+    "python": "3.8.3",
+    "heartbeatAt": "2024-03-11T13:47:45.030618",
+    "startedAt": "2024-03-11T13:47:44.661308",
+    "docker": null,
+    "cuda": "11.0.228",
+    "args": [
+        "-o",
+        "options/fast/fast-m.yml"
+    ],
+    "state": "running",
+    "program": "new_train.py",
+    "codePathLocal": "new_train.py",
+    "codePath": "new_train.py",
+    "host": "a-System-Product-Name",
+    "username": "a",
+    "executable": "/home/a/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1900.2393749999994,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1266.655,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1259.288,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1072.016,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1008.137,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 943.873,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 914.222,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 899.289,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 881.207,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 875.144,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1105.526,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 970.14,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 899.674,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.034,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.038,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 799.683,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.046,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 937.4047203063965,
+            "used": 849.4481239318848
+        }
+    },
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 25393561600
+        }
+    ],
+    "memory": {
+        "total": 62.711666107177734
+    }
+}

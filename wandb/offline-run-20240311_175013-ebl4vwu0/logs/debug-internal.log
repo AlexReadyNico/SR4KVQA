@@ -1,0 +1,47 @@
+2024-03-11 17:50:13,733 INFO    StreamThr :3684302 [internal.py:wandb_internal():86] W&B internal server running at pid: 3684302, started at: 2024-03-11 17:50:13.733387
+2024-03-11 17:50:13,734 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status
+2024-03-11 17:50:13,735 INFO    WriterThread:3684302 [datastore.py:open_for_write():85] open: /home/a/Downloads/SR4KVQA/wandb/offline-run-20240311_175013-ebl4vwu0/run-ebl4vwu0.wandb
+2024-03-11 17:50:13,739 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: run_start
+2024-03-11 17:50:13,741 DEBUG   HandlerThread:3684302 [system_info.py:__init__():32] System info init
+2024-03-11 17:50:13,741 DEBUG   HandlerThread:3684302 [system_info.py:__init__():47] System info init done
+2024-03-11 17:50:13,741 INFO    HandlerThread:3684302 [system_monitor.py:start():194] Starting system monitor
+2024-03-11 17:50:13,741 INFO    SystemMonitor:3684302 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-11 17:50:13,742 INFO    HandlerThread:3684302 [system_monitor.py:probe():214] Collecting system info
+2024-03-11 17:50:13,742 INFO    SystemMonitor:3684302 [interfaces.py:start():190] Started cpu monitoring
+2024-03-11 17:50:13,743 INFO    SystemMonitor:3684302 [interfaces.py:start():190] Started disk monitoring
+2024-03-11 17:50:13,743 INFO    SystemMonitor:3684302 [interfaces.py:start():190] Started gpu monitoring
+2024-03-11 17:50:13,744 INFO    SystemMonitor:3684302 [interfaces.py:start():190] Started memory monitoring
+2024-03-11 17:50:13,744 INFO    SystemMonitor:3684302 [interfaces.py:start():190] Started network monitoring
+2024-03-11 17:50:14,071 DEBUG   HandlerThread:3684302 [system_info.py:probe():196] Probing system
+2024-03-11 17:50:14,074 DEBUG   HandlerThread:3684302 [gitlib.py:_init_repo():53] git repository is invalid
+2024-03-11 17:50:14,074 DEBUG   HandlerThread:3684302 [system_info.py:probe():244] Probing system done
+2024-03-11 17:50:14,074 DEBUG   HandlerThread:3684302 [system_monitor.py:probe():223] {'os': 'Linux-5.8.0-59-generic-x86_64-with-glibc2.10', 'python': '3.8.3', 'heartbeatAt': '2024-03-11T09:50:14.071601', 'startedAt': '2024-03-11T09:50:13.729759', 'docker': None, 'cuda': '11.0.228', 'args': ('-o', 'options/fast/fast-m.yml'), 'state': 'running', 'program': 'new_train.py', 'codePathLocal': 'new_train.py', 'codePath': 'new_train.py', 'host': 'a-System-Product-Name', 'username': 'a', 'executable': '/home/a/anaconda3/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1938.7129375, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 1466.275, 'min': 800.0, 'max': 4800.0}, {'current': 1411.908, 'min': 800.0, 'max': 4800.0}, {'current': 1532.815, 'min': 800.0, 'max': 4800.0}, {'current': 1677.218, 'min': 800.0, 'max': 4800.0}, {'current': 1818.075, 'min': 800.0, 'max': 4800.0}, {'current': 1699.164, 'min': 800.0, 'max': 4800.0}, {'current': 1450.054, 'min': 800.0, 'max': 4800.0}, {'current': 1306.486, 'min': 800.0, 'max': 4800.0}, {'current': 1194.939, 'min': 800.0, 'max': 4800.0}, {'current': 1973.37, 'min': 800.0, 'max': 4800.0}, {'current': 1046.531, 'min': 800.0, 'max': 4800.0}, {'current': 1038.731, 'min': 800.0, 'max': 4800.0}, {'current': 805.347, 'min': 800.0, 'max': 4800.0}, {'current': 800.033, 'min': 800.0, 'max': 4800.0}, {'current': 800.052, 'min': 800.0, 'max': 4800.0}, {'current': 800.021, 'min': 800.0, 'max': 4800.0}], 'disk': {'/': {'total': 937.4047203063965, 'used': 849.189079284668}}, 'gpu': 'Quadro RTX 6000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 6000', 'memory_total': 25393561600}], 'memory': {'total': 62.711666107177734}}
+2024-03-11 17:50:14,074 INFO    HandlerThread:3684302 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-11 17:50:14,074 INFO    HandlerThread:3684302 [system_monitor.py:probe():227] Publishing system info
+2024-03-11 17:50:14,074 DEBUG   HandlerThread:3684302 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-03-11 17:50:14,075 DEBUG   HandlerThread:3684302 [system_info.py:_save_pip():68] Saving pip packages done
+2024-03-11 17:50:14,075 DEBUG   HandlerThread:3684302 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-03-11 17:50:21,231 DEBUG   HandlerThread:3684302 [system_info.py:_save_conda():87] Saving conda packages done
+2024-03-11 17:50:21,232 INFO    HandlerThread:3684302 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-11 17:50:21,235 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:21,235 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 17:50:21,235 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:24,236 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:24,236 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:29,237 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:29,238 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:34,240 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:34,240 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:39,241 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:39,241 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:44,242 DEBUG   HandlerThread:3684302 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 17:50:44,242 DEBUG   SenderThread:3684302 [sender.py:send_request():407] send_request: status_report
+2024-03-11 17:50:45,761 INFO    cpu       :3684302 [interfaces.py:monitor():140] Process cpu has exited.
+2024-03-11 17:50:45,762 DEBUG   SystemMonitor:3684302 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-11 17:50:45,762 DEBUG   SystemMonitor:3684302 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-11 17:50:45,762 DEBUG   SystemMonitor:3684302 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-11 17:50:45,768 INFO    memory    :3684302 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-03-11 17:50:46,767 WARNING StreamThr :3684302 [internal.py:is_dead():414] Internal process exiting, parent pid 3684196 disappeared
+2024-03-11 17:50:46,767 ERROR   StreamThr :3684302 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-03-11 17:50:47,243 INFO    SenderThread:3684302 [sender.py:finish():1534] shutting down sender
+2024-03-11 17:50:47,746 INFO    MainThread:3684302 [internal.py:handle_exit():76] Internal process exited

@@ -1,0 +1,88 @@
+name: FAST-VQA-M-Refactor-1*4
+num_epochs: 3
+l_num_epochs: 0
+warmup_epochs: 2.5
+ema: true
+save_model: true
+batch_size: 8
+num_workers: 3
+
+wandb:
+    project_name: VQA_Experiments_2022
+
+data:
+    train:
+        type: FusionDataset
+        args:
+            phase: train
+            #anno_file: ./examplar_data_labels/train_labels.txt
+            #data_prefix: ../datasets/LSVQ
+            #anno_file: ./examplar_data_labels/LIVE_VQC/labels_quick.txt
+            #data_prefix: /media/a/MyPassport/LIVE-VQC/
+            anno_file: /media/a/AlexReady/SR4KVQA375_label/train_label.txt
+            data_prefix: /media/a/AlexReady/
+            sample_types:
+                fragments:
+                    fragments_h: 1
+                    fragments_w: 1
+                    fsize_h: 224
+                    fsize_w: 224
+                    aligned: 4
+                    clip_len: 32
+                    random_: True
+                    random_upsample: True
+                    frame_interval: 4
+                    num_clips: 1
+
+
+    val-sr4kvqa:
+          type: FusionDataset
+          args:
+            phase: test
+            anno_file: /media/a/AlexReady/SR4KVQA375_label/val_label.txt
+            data_prefix: /media/a/AlexReady/
+            sample_types:
+                #crop:                
+                fragments:
+                    fragments_h: 1
+                    fragments_w: 1
+                    fsize_h: 224
+                    fsize_w: 224
+                    aligned: 4
+                    clip_len: 32
+                    random_: True
+                    random_upsample: True
+                    frame_interval: 4
+                    num_clips: 4
+
+                                                                     
+model:
+    type: DiViDeAddEvaluator
+    args:
+        backbone:
+            fragments:
+                checkpoint: false
+                pretrained: 
+            resize:
+                type: conv_tiny
+        backbone_size: swin_tiny_grpb_m
+        backbone_preserve_keys: fragments,resize
+        #backbone_size: swin_tiny_grpb_m
+        #backbone_preserve_keys: fragments
+        divide_head: false
+        vqa_head:
+            in_channels: 768
+            hidden_channels: 64
+            
+optimizer:
+    lr: !!float 1e-3
+    backbone_lr_mult: !!float 1e-1
+    wd: 0.05
+        
+load_path: ./pretrained/swin_tiny_patch244_window877_kinetics400_1k.pth
+
+test_load_path: ./pretrained_weights/FAST-VQA-M-Refactor-1*4_val-sr4kvqa_n_dev_v0.0.pth
+
+    
+        
+
